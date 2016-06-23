@@ -108,3 +108,7 @@ sys.uart.enable=0
 # WiFi
 ro.disableWifiApFirmwareReload=true
 wifi.interface=wlan0
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
