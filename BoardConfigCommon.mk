@@ -90,7 +90,7 @@ BOARD_HARDWARE_CLASS += \
     $(VENDOR_PATH)/cmhw
 
 # Crypto
-TARGET_HW_DISK_ENCRYPTION := true
+# TARGET_HW_DISK_ENCRYPTION := true
 
 # Dex
 ifeq ($(HOST_OS),linux)
@@ -152,8 +152,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Release tools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_asus
-TARGET_RELEASETOOLS_EXTENSIONS := $(VENDOR_PATH)/releasetools
+# TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_asus
+# TARGET_RELEASETOOLS_EXTENSIONS := $(VENDOR_PATH)/releasetools
 
 # RIL
 TARGET_RIL_VARIANT := caf
