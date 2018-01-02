@@ -88,7 +88,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    bspcapability \
+#    bspcapability \
     camera.msm8916 \
     libshims_camera \
     Snap
