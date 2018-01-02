@@ -108,7 +108,7 @@ PRODUCT_PACKAGES += \
     bspcapability \
     camera.msm8916 \
     libshims_camera \
-    Snap
+    Camera2
 
 # Connectivity Engine support
 PRODUCT_PACKAGES += \
@@ -232,11 +232,6 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     ueventd.qcom.rc
 
-# Recovery
-PRODUCT_PACKAGES += \
-    librecovery_updater_asus \
-    resize2fs_static
-
 # Releasetools
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/releasetools/init.asus.sh:install/bin/init.asus.sh
@@ -318,6 +313,7 @@ PRODUCT_PACKAGES += \
     wificond
 
 PRODUCT_PACKAGES += \
+    libwifi-hal-qcom \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf
@@ -325,3 +321,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     p2p_supplicant_overlay.conf \
     wpa_supplicant_overlay.conf
+
+# Workaround for non-working incall/callspeaker-mic
+RIL_SET_CALL_CLOCK_SYNC_WORKAROUND := true
+RIL_SET_TWO_MIC_CONTROL_WORKAROUND := true
