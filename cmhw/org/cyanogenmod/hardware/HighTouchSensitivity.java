@@ -14,9 +14,10 @@
  * limitations under the License.
  */
 
-package org.lineageos.hardware;
+package org.cyanogenmod.hardware;
 
-import org.lineageos.internal.util.FileUtils;
+import org.cyanogenmod.internal.util.FileUtils;
+
 
 /**
  * Glove mode / high touch sensitivity
