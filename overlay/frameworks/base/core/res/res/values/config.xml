@@ -400,4 +400,7 @@
 
     <!-- Should the pinner service pin the Camera application? -->
     <bool name="config_pinnerCameraApp">true</bool>
+
+    <!-- Should DT2S work on fullscreen or not on lockscreen? -->
+    <bool name="fullScreenDT2S">true</bool>
 </resources>
