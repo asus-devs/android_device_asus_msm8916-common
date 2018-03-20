@@ -1,0 +1,1 @@
+allow surfaceflinger postprocessing_prop:file { read open getattr };

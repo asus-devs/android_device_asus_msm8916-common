@@ -2,3 +2,9 @@ allow kernel self:capability chown;
 
 allow kernel asdf_data_file:dir create_dir_perms;
 allow kernel asdf_data_file:file create_file_perms;
+
+allow kernel vfat:file { open getattr };
+
+allow kernel rootfs:dir { write add_name };
+
+allow kernel kernel:capability { chown };

@@ -2,3 +2,11 @@ allow perfd self:capability fsetid;
 
 allow perfd sysfs_thermal:dir search;
 allow perfd sysfs_thermal:file w_file_perms;
+
+allow perfd perfd:capability { dac_override };
+
+allow perfd sysfs_memory:dir { search };
+allow perfd sysfs_memory:file { read open write };
+
+allow perfd hal_power_default:dir { search };
+allow perfd hal_power_default:file { read open };
