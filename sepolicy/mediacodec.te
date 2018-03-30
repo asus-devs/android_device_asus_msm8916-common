@@ -1,1 +1,5 @@
 allow mediacodec vfat:file { getattr open read };
+
+allow mediacodec perfd:unix_stream_socket { connectto };
+
+allow mediacodec mpctl_socket:sock_file { write };
