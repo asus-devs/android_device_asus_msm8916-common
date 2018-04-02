@@ -86,6 +86,8 @@ BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
+TARGET_KEYMASTER_WAIT_FOR_QSEE := true
+TARGET_LEGACY_HW_DISK_ENCRYPTION := true
 
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
@@ -123,9 +125,6 @@ DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
 
 # Init
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
-
-# Keymaster
-TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
