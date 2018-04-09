@@ -1,1 +1,5 @@
 allow hal_audio_default mpctl_socket:dir { search };
+
+allow hal_audio_default i2c_device:chr_file { read write };
+
+allow hal_audio_default property_socket:sock_file { write };
