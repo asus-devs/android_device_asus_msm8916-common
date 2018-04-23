@@ -1,1 +1,3 @@
-allow mediaextractor sdcardfs:file { read };
+allow mediaextractor sdcardfs:file { read getattr };
+
+allow mediaextractor vfat:file { read };

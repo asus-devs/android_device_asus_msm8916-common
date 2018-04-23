@@ -4,3 +4,5 @@ allow hal_gnss_default ssr_device:chr_file r_file_perms;
 
 allow hal_gnss_default location_data_file:file { write open };
 allow hal_gnss_default location_data_file:file { getattr setattr };
+
+allow hal_gnss_default location_data_file:dir { create };

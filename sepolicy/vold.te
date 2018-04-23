@@ -1,2 +1,7 @@
 allow vold persist_file:dir { read open ioctl };
+
 allow vold fac_file:dir { read open ioctl };
+
+allow vold proc_driver:dir { read open };
+
+allow vold logd:dir { read open };
