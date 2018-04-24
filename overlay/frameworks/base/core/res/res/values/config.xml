@@ -422,8 +422,10 @@
 
     <!-- Should DT2S work on fullscreen or not on lockscreen? -->
     <bool name="fullScreenDT2S">true</bool>
-
+ 
     <!-- AlwaysOnDisplay  -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
+    <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
+    <bool name="config_displayBlanksAfterDoze">true</bool>
 </resources>
