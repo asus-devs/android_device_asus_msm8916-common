@@ -1,3 +1,6 @@
+# API
+ro.product.first_api_level=21
+
 # Art
 dalvik.vm.dex2oat-flags=--no-watch-dog
 ro.sys.fw.dex2oat_thread_count=4
