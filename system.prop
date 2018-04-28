@@ -108,9 +108,6 @@ ro.telephony.default_network=9,9
 ro.build.shutdown_timeout=0
 persist.vendor.radio.add_power_save=1
 
-# Storage
-ro.sys.sdcardfs=true
-
 # Time
 persist.timed.enable=true
 
