@@ -8,5 +8,3 @@ allow kernel vfat:file { open getattr };
 allow kernel rootfs:dir { write add_name };
 
 allow kernel kernel:capability { chown };
-
-dontaudit kernel kernel:capability { dac_override };
